@@ -1,0 +1,13 @@
+<h3>Habilidades</h3>
+<table border="0">
+  <tr *ngFor="let categoriaSkill of skills">
+    <td>
+      <h4>{{ categoriaSkill.categoria }}</h4>
+      <ul>
+        <li *ngFor="let habilidad of categoriaSkill.habilidades">
+          <span>{{ habilidad.nombre }}</span> - <span>{{ habilidad.nivel }}</span>
+        </li>
+      </ul>
+    </td>
+  </tr>
+</table>
