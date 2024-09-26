@@ -1,0 +1,10 @@
+<h3>Logros y Reconocimientos</h3>
+<table border="0">
+  <tr *ngFor="let achievement of achievements">
+    <td>
+      <h4>{{ achievement.titulo }}</h4>
+      <p>{{ achievement.descripcion }}</p>
+      <p><em>Fecha: {{ achievement.fecha }}</em></p>
+    </td>
+  </tr>
+</table>
