@@ -1,0 +1,13 @@
+<h3>Intereses y Pasatiempos</h3>
+<table border="0">
+  <tr *ngFor="let category of interests">
+    <td>
+      <h4>{{ category.categoria }}</h4>
+      <ul>
+        <li *ngFor="let item of category.items">
+          {{ item }}
+        </li>
+      </ul>
+    </td>
+  </tr>
+</table>
